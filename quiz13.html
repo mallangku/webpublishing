@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>quiz13</title>
+    <script>
+        function button_click(){
+            var answer = prompt(
+            '예/아니요 로 답변하십시오'
+            );
+            if(answer=='예'){
+                var parttime=prompt('하고 싶은 아르바이트는 무엇인가요?');
+                document.write("이번 방학에 " + parttime + " 아르바이트를 할 예정이군요~")
+            }
+            if(answer=='아니요'){
+                document.write("이번 방학에는 자신의 skill을 올릴 예정이군요~")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>※ 설문조사</h2>
+    <p> 이번 방학 때 아르바이트를 계획하고 있나요? </p>
+    <input type="button" onclick="button_click()" value="버튼 클릭" />
+
+</body>
+</html>

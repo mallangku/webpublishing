@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link type="text/css" rel="stylesheet" href="override.css"></link>
+    <style>
+        p {color:blue;}
+        p {color:yellow;}
+        p {color:red;}
+    </style>
+</head>
+<body>
+    <p style="color:black;">CSS가 중복 정의된 경우 어떤 것이 적용될까?</p>
+    <!--
+        배경은 외부 스타일시트가 그대로 적욛되어 있고
+        글자는 내부 스타일시트 제일 마지막 red로 적용됨
+        외부 css link가 내부보다 아래에 있으면 외부로 적용됨
+        인라인 추가하니 인라인으로 적용
+
+        *정리하면 인라인> 내부와 외부는 순서가 중요*
+    -->
+</body>
+</html>
