@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <script>
+		function calculator(var1,var2){
+			var cal = prompt(
+				'연산자를 선택하시오. [+,-,*,/]'
+				);
+			if(answer=='+'){
+				document.write("계산 결과는" + (var1+var2) + "입니다")
+			}
+			else if(answer=='-'){
+				document.write("계산 결과는" + (var1-var2) + "입니다")
+			}
+			else if(answer=='*'){
+				document.write("계산 결과는" + (var1*var2) + "입니다")
+			}
+			else if(answer=='/'){
+				document.write("계산 결과는" + (var1/var2) + "입니다")
+			}
+		}
+	</script>
+</head>
+<body>
+	<h3> 계산기(calculator) 프로그램 </h3>
+	<input type="button" onclick="calculator(10,20);" value="계산 시작" />
+</body>
+</html>
